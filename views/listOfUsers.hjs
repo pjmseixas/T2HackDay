@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tele2 HackDay</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap-responsive.min.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'/>
+    <script src='/bootstrap/js/bootstrap.min.js'/>
+    
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ name }}</p>
+    <fieldset>
+    <div class="panel panel-default">
+  			<!-- Default panel contents -->
+  		<div class="panel-heading">List of users</div>
+	    <div class="panel-body">
+	    {{#users}}
+  <b>{{name.name}} -  {{user.msisdn}}</b>
+{{/users}}
+    </div>
+
+  <!-- Table -->
+  <table class="table">
+    	
+  </table>
+</div>
+    </fieldset>
+    <br/><br/>
+     <fieldset>
+    <div class="panel panel-default">
+  			<!-- Default panel contents -->
+  		<div class="panel-heading">Rewards available</div>
+	    <div class="panel-body">
+    <p>Rewards claimed: </p>
+    <p>Rewards available: </p>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    
+  </table>
+</div>
+    </fieldset>
+	
+  </body>
+</html>

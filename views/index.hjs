@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='/bootstrap/css/bootstrap-responsive.min.css'/>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    {{! <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'/> }}
+    {{! <script src='/bootstrap/js/bootstrap.min.js'/> }}
+    
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ project }}</p>
+    <fieldset>
+	    <form action="./getByMSISDN">
+	    	<legend>Please Login below using your MSISDN</legend>
+	    	<label>MSISDN</label>
+	    	<input type="text" class="form-control" name="msisdn" placeholder="Type something…">
+	    	<p><button type="submit" formmethod="get" class="btn">Submit</button></p>
+	    </form>
+  	</fieldset>
+  </body>
+</html>
